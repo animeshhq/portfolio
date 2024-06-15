@@ -1,0 +1,18 @@
+---
+import Nav from '../components/Nav.tsx';
+import Layout from '../layouts/Layout.astro';
+import '@fontsource/vt323';
+---
+
+<Layout title="Welcome to Astro.">
+  <header>
+    <Nav client:load />
+  </header>
+  <main class="h-screen w-full bg-[#141414] text-white">
+    <div class="h-2/3 w-full flex flex-col items-center justify-center px-4 text-center">
+      <h1 class="font-poppins font-semibold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl antialiased">Work Smarter, Earn Better</h1>
+      <h1 class="font-inter font-semibold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl antialiased pb-4 sm:pb-6 md:pb-8">Embrace Digital Freedom</h1>
+      <p class="font-inter text-base sm:text-lg md:text-xl text-[#9DA3A1]">Join the community of digital entrepreneurs. Turn your passion into a profitable business.</p>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,16 @@
+---
+import Nav from '../../components/Nav.tsx';
+import Layout from '../../layouts/Layout.astro';
+import '@fontsource/vt323';
+---
+
+<Layout title="Newsletter">
+  <header>
+    <Nav client:load />
+  </header>
+  <main class="h-screen w-full bg-[#141414] text-white">
+    <div class="h-full w-full flex flex-col items-center justify-center px-4 text-center">
+      <h1 class="font-jet font-semibold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl antialiased">Coming Soon</h1>
+    </div>
+  </main>
+</Layout>
