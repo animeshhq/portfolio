@@ -1,23 +1,31 @@
 ---
 import Nav from '../../components/Nav.tsx';
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 import '@fontsource/vt323';
-import { getCollection, getEntry } from 'astro:content';
 
-const allBlogPosts = await getCollection('newsletter');
-
-const bodies = allBlogPosts.map(item => item.body);
+const posts = await getCollection('newsletter');
 ---
 
 <Layout title="Newsletter">
   <header>
     <Nav client:load />
   </header>
-  <main class="h-screen w-full bg-[#141414] text-white">
-    <div class="h-full w-full flex flex-col items-center justify-center px-4 text-center">
-      <h1 class="font-jet font-semibold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl antialiased">
-        Coming Soon
-      </h1>
+  <main class="h-screen min-h-screen w-full bg-[#141414] text-white overflow-auto">
+    <div class="h-screen min-h-screen px-4 flex flex-wrap"> {/* Added flex-row */}
+      {posts.map(post => (
+        <div key={post.slug} class="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 h-1/2 md:h-[400px]lg:h-[500px] mb-4 shadow-md flex items-center flex-col pl-2 pr-2 mt-10">
+          <h3 class="font-jet font-semibold text-white text-xl mb-2 mt-10">
+              {post.data.title}
+          </h3>
+          <a class="font-jet font-semibold text-white text-lg mt-36" href={`/letter/${post.slug}`}>
+            Click me to Read Full
+          </a>
+          <div class="w-full h-px bg-gray-400 mt-28"></div> {/* Added divider line */}
+        </div>
+      ))}
     </div>
   </main>
 </Layout>
+
+

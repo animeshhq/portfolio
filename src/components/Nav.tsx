@@ -11,7 +11,7 @@ const Nav = () => {
     <nav className='bg-[#141414] border-b border-line font-inter w-full h-16 sm:h-20 md:h-18 text-white text-lg'>
       <div className='relative flex items-center justify-between w-full h-full px-4'>
         <div className='h-full flex items-center ml-12'>
-          Animesh
+          <a href="/">Animesh</a>
         </div>
 
         <div className='hidden md:flex h-full justify-center items-center space-x-4'>

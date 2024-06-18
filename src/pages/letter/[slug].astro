@@ -1,0 +1,43 @@
+---
+import { getEntryBySlug, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import '@fontsource/vt323';
+import Nav from '../../components/Nav.tsx';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('newsletter');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug('newsletter', slug);
+
+if (!post) {
+  throw new Error(`Post not found for slug: ${slug}`);
+}
+
+// Use the render function to get Content and other data
+const { Content, headings, remarkPluginFrontmatter } = await post.render();
+
+const { title, date } = post.data;
+---
+
+<Layout title={title}>
+  <header>
+    <Nav client:load />
+  </header>
+  <main class="w-full h-screen bg-[#141414] flex justify-center items-center">
+  <div class="h-screen w-full bg-[#141414] text-white max-w-[476px]">
+    <div class="h-full w-full flex flex-col items-center px-4 text-center">
+      <p class="font-jet font-semibold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl antialiased mt-20">
+        {title}
+      </p>
+      <article class="prose mt-10 ml-4 sm:ml-0 mr-4 sm:mr-0">
+        <Content />
+      </article>
+    </div>
+  </div>
+</main>
+</Layout>
