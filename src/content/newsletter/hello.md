@@ -1,6 +1,6 @@
 ---
-title: 'The Start'
+title: 'The Art Of Building a Digital Business'
 date: 2024-06-18
 ---
 
-Hello there. This is my first blog post on my custom site.
+Coming Soon.
