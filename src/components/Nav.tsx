@@ -8,7 +8,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className='bg-[#141414] border-b border-line font-inter w-full h-16 sm:h-20 md:h-18 text-white text-lg'>
+    <nav className='bg-[#0b0b0b] border-b border-line font-inter w-full h-16 sm:h-20 md:h-18 text-white text-lg'>
       <div className='relative flex items-center justify-between w-full h-full px-4'>
         <div className='h-full flex items-center ml-12'>
           <a href="/">Animesh</a>
