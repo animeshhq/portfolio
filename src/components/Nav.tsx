@@ -14,8 +14,8 @@ const Nav = () => {
           <a href="/">Animesh</a>
         </div>
 
-        <div className='hidden md:flex h-full justify-center items-center space-x-4'>
-          <a href="/letter/" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Newsletter</a>
+        <div className='hidden md:flex h-full justify-center items-center space-x-4 pr-8'>
+          <a href="/group/" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Newsletter</a>
           <a href="/about" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Resources</a>
           <a href="/products" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Products</a>
         </div>
@@ -34,9 +34,7 @@ const Nav = () => {
         {menuOpen && (
           <div className='absolute top-16 left-0 w-full bg-[#141414] flex flex-col items-center space-y-4 py-4 md:hidden'>
             <a href="/letter/" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Newsletter</a>
-            <a href="/about" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">About</a>
-            <a href="/services" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Products</a>
-            <a href="/contact" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Contact</a>
+            <a href="/about" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Resources</a>
           </div>
         )}
       </div>

@@ -2,6 +2,7 @@
 title: 'How to surpass 99% of people? (while doing things you love to do)'
 date: 2024-06-18
 image: '/images/business.png'
+group: "Entrepreneurship"
 ---
 
 

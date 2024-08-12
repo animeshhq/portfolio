@@ -11,7 +11,8 @@ export default {
         vt323: ['VT323', 'monospace'],
         jet: ['jetbrains-mono', 'monospace'],
         poppins: ['poppins', 'sans-serif'],
-        inter: ['inter', 'sans-serif']
+        inter: ['inter', 'sans-serif'],
+        outfit: ['outfit', 'sans-serif']
       },
     },
   },

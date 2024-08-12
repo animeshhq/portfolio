@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import Nav from '../../../components/Nav.tsx';
+import Layout from '../../../layouts/Layout.astro';
+import '@fontsource/vt323';
+
+// Fetch all newsletters
+const posts = await getCollection('newsletter');
+
+// Get the group parameter from the URL
+const { group } = Astro.params;
+
+// Filter posts by the current group
+const groupPosts = posts.filter(post => post.data.group.toLowerCase().replace(/\s+/g, '-') === group);
+
+// Generate the paths for each group dynamically
+export async function getStaticPaths() {
+  const posts = await getCollection('newsletter');
+  const groups = [...new Set(posts.map(post => post.data.group.toLowerCase().replace(/\s+/g, '-')))];
+  return groups.map(group => ({
+    params: { group },
+  }));
+}
+---
+
+<Layout title={group.charAt(0).toUpperCase() + group.slice(1)}>
+<header>
+    <Nav client:load />
+</header>
+  <main class="min-h-screen w-full bg-black text-white flex flex-col items-center py-20">
+    <div class="container mx-auto px-4 max-w-[512px] lg:max-w-[600px]">
+      
+      {groupPosts.length > 0 ? (
+        <ul class="space-y-6">
+          {groupPosts.map((post, index) => (
+            // You can use a fragment or another component to hold the key
+            <li class="border-b border-gray-700 pb-6">
+              <a href={`/letter/${post.slug}`} class="text-xl font-bold hover:underline">{post.data.title}</a>
+              <p class="text-gray-400 mt-2">{post.data.date.toDateString()}</p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No newsletters found for this group.</p>
+      )}
+    </div>
+  </main>
+</Layout>

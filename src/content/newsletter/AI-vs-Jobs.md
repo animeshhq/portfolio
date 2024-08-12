@@ -2,6 +2,7 @@
 title: 'Are you worried about AI taking over your job?'
 date: 2024-06-18
 image: '/images/business.png'
+group: "Tech"
 ---
 
 

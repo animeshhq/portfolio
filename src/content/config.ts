@@ -4,7 +4,7 @@ const newsletter = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.date(),
-    image: z.string().optional(), // Add the image field here
+    group: z.string(), // Group name (e.g., Tech, Design, Entrepreneurship)
   }),
 });
 
