@@ -33,7 +33,7 @@ const Nav = () => {
 
         {menuOpen && (
           <div className='absolute top-16 left-0 w-full bg-[#141414] flex flex-col items-center space-y-4 py-4 md:hidden'>
-            <a href="/letter/" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Newsletter</a>
+            <a href="/group/" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Newsletter</a>
             <a href="/about" className="text-[#9DA3A1] hover:text-[#ffffff] px-3 py-2 rounded-md">Resources</a>
           </div>
         )}
