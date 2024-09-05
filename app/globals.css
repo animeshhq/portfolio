@@ -1,0 +1,6 @@
+@import '@fontsource/instrument-serif/400-italic.css';
+@import '@fontsource-variable/outfit';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
