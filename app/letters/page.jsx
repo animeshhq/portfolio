@@ -12,7 +12,7 @@ const Page = () => {
         {/* <Gumroad/> */}
         <div className="text-center mb-10">
           <p className="text-2xl sm:text-4xl font-outfit font-semibold">Focus On What Matters</p>
-          <p className="text-end font-instrument font-light text-sm mt-2">Ryu Edge</p>
+          <p className="text-end font-instrument font-light text-sm mt-2">Kanso Edge</p>
         </div>
 
         {postMetaData.map((post, postIndex) => (
