@@ -36,7 +36,7 @@ const Navbar = () => {
           )}
         </a>
 
-        <a href="https://x.com/animeshryu" target="_blank" className="relative flex items-center justify-center font-semibold">
+        <a href="https://x.com/shikokaizen" target="_blank" className="relative flex items-center justify-center font-semibold">
           {isActive('/x') ? (
             <img src="/x-filled.svg" alt="x" />
           ) : (
@@ -44,7 +44,7 @@ const Navbar = () => {
           )}
         </a>
 
-        <a href="https://www.instagram.com/animeshryu/" target='_blank' className="relative flex items-center justify-center font-semibold">
+        <a href="https://www.instagram.com/shikokaizen/" target='_blank' className="relative flex items-center justify-center font-semibold">
           {isActive('/insta') ? (
             <img src="/insta-filled.svg" alt="insta" />
           ) : (
