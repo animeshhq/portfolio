@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${inter.className} bg-[#111216] min-h-fit`}>
+      <body className={`${inter.className} bg-[#fefedc] min-h-fit`}>
         {children}
         <Navbar />
       </body>
