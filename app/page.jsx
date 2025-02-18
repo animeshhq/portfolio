@@ -3,7 +3,7 @@ import ResponsiveCard from "@/components/Card";
 
 const Page = () => {
   return (
-    <main className="w-full max-w-[1058px] min-h-screen flex flex-col items-start justify-start mx-auto px-4 sm:px-8 text-white text-3xl sm:text-5xl">
+    <main className="w-full max-w-[1058px] min-h-screen flex flex-col items-start justify-start mx-auto px-4 sm:px-8 text-black text-3xl sm:text-5xl">
       <section className="w-full mt-32">
         <div className="flex flex-col justify-center items-center text-white">
           <p className="font-instrument">Hi, I am Animesh</p>
