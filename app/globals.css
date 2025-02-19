@@ -4,3 +4,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Light Mode */
+:root {
+    --bg-color: #e9e1c7;
+    --text-color: #000000;
+  }
+  
+  /* Dark Mode */
+  .dark {
+    --bg-color: #111216;
+    --text-color: #ffffff;
+  }
+  
+  /* Apply Theme */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
