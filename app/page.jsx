@@ -5,14 +5,10 @@ const Page = () => {
         <div className="flex flex-col justify-center items-center">
           <p className="font-instrument">Hi, I am Animesh</p>
           <p className="text-center w-full max-w-[476px] mt-12 text-base sm:text-lg text-[var(--text-secondary)]">
-            I am a creator at heart. Fueled by curiosity and passion for turning ideas into reality. Since I love creating things, I am into entrepreneurship and want to start my own business.
-            <br /><br />
+            I am a creator at heart. Fueled by curiosity and passion for turning ideas into reality.<br /><br />
             I have always been inspired by visionaries like Steve Jobs, who had an incredible ability to turn ideas into something truly special.
           </p>
         </div>
-      </section>
-
-      <section className="flex flex-col md:flex-row w-full gap-6 justify-center min-h-screen mt-8 sm:mt-10 md:mt-44">
       </section>
     </main>
   );

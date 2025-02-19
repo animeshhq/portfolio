@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} min-h-fit`}>
         <Provider>
-        {children}
-        <Navbar />
+          {children}
+          <Navbar />
         </Provider>
       </body>
     </html>
