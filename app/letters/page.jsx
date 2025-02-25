@@ -20,7 +20,7 @@ const Page = () => {
             <div className="p-6">
               <Link href={`/letters/${post.slug}`} className="text-lg sm:text-xl mb-2 text-start">{post.title}</Link>
               <p className="text-gray-700 text-sm mb-4 text-start">{post.date}</p>
-              <Link href={`/letters/${post.slug}`} className="text-[var(--text-secondary)] hover:text-[#cccbcd] border-b text-start block">
+              <Link href={`/letters/${post.slug}`} className="border-b border-black dark:border-white text-[var(--text-secondary)] hover:text-[#cccbcd] text-start block">
                 Read more
               </Link>
             </div>
