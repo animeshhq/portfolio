@@ -1,3 +1,5 @@
+import EmailForm from "@/components/EmailForm";
+
 const Page = () => {
   return (
     <main className="w-full max-w-[1058px] min-h-screen flex flex-col items-start justify-start mx-auto px-4 sm:px-8 text-[var(--text-color)] text-3xl sm:text-5xl">
