@@ -41,11 +41,11 @@ const Navbar = () => {
 
         {/* Theme Toggle Button */}
         <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           className="relative flex items-center justify-center font-semibold"
         >
           {mounted ? (
-            <img src={theme === "dark" ? "/moon-filled.svg" : "/moon.svg"} alt="theme toggle" />
+            <img src={theme === "light" ? "/moon.svg" : "/moon-filled.svg"} alt="theme toggle" />
           ) : (
             <img src="/moon.svg" alt="theme toggle" /> // Default state
           )}
