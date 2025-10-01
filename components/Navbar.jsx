@@ -31,7 +31,7 @@ const Navbar = () => {
           <img src={isActive("/work") ? "/bag-filled.svg" : "/bag.svg"} alt="bag" />
         </a>
 
-        <a href="https://x.com/shikokaizen" target="_blank" className="relative flex items-center justify-center font-semibold">
+        <a href="https://x.com/animeshhq" target="_blank" className="relative flex items-center justify-center font-semibold">
           <img src={isActive("/x") ? "/x-filled.svg" : "/x.svg"} alt="x" />
         </a>
 
