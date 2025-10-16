@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        instrument: ['Instrument Serif', 'sans-serif'],
-        outfit: ['Outfit Variable', 'sans-serif']
-    },
+        instrument: ["Instrument Serif", "sans-serif"],
+        outfit: ["Outfit Variable", "sans-serif"],
+      },
     },
   },
   plugins: [],
-  darkMode: 'class',
+  darkMode: "class",
 };
