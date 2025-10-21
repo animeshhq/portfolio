@@ -35,7 +35,7 @@ const Navbar = () => {
           <img src={isActive("/x") ? "/x-filled.svg" : "/x.svg"} alt="x" />
         </a>
 
-        <a href="https://www.instagram.com/animeshhq/" target="_blank" className="relative flex items-center justify-center font-semibold">
+        <a href="#" target="_blank" className="relative flex items-center justify-center font-semibold">
           <img src={isActive("/insta") ? "/insta-filled.svg" : "/insta.svg"} alt="insta" />
         </a>
 
