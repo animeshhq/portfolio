@@ -12,7 +12,7 @@ export const metadata = {
     "Hi I am Animesh. I am a creator at heart. Fueled by curiosity and passion for turning ideas into reality",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
