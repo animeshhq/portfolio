@@ -3,7 +3,7 @@ title: "The Age of Infinite Supply"
 date: "Tue Oct 21 2025"
 ---
 
-### History
+# History
 
 We live in a world where everything is just a click away. From watching your favorite movies to ordering your favourite food or any product, a world dominated by algorithms that are capable of keeping you and me hooked for hours.
 We have certainly come a long way. Business and trade have become so easy. Businesses can now target millions of people all at once.
@@ -16,7 +16,7 @@ Any business or any brand largely depends on the game of supply and demand. In t
 
 In this age distribution was the major bottleneck instead of creation. We will talk about physical scarcity and geographical monopoly and regional demand in detail in some other article. Also industrialization :D
 
-### Rise of the Internet
+# Rise of the Internet
 
 In the mid 1990s when the internet was getting commercialized, we saw a new boom called the Dot Com Era. In which thousands of companies and brands went online and many new ones were founded as they all wanted to try out this new way of communication. They had no idea as to what it would become in the future.
 
@@ -26,13 +26,13 @@ Many of my favourite companies were founded during this period. I'll name two of
 Soon we even got social media up and running with Facebook dominating that space and crushing its competitors which changed how we now connect and talk to one another.
 
 
-### Macintosh 128K
+# Macintosh 128K
 
 Apple made a really big release of its most successful PC of that time called the Macintosh which was later rebranded as Macintosh 128K. 
 Infact Steve Jobs was the person whom I look upto the most as the most influential innovator of that time.
 Because this Macintosh completely changed the entire domain of personal computers. He popularized design as a core element of Apple's products, wether it was the iPhone, iPad or the MacBook Air.
 
-### Present Age and Early Covid
+# Present Age and Early Covid
 
 As smartphones became mainstream around 2015 and then in 2019 Covid hit us, followed by lockdowns... Everything changed... again, this is when tech companies ushered in a wave of profits and increase revenue because everyone was in their home surfing the internet, which made brands realise the importance of having an online presence. The realisation was so dramatic that even brands that never planned on going online, had to do it.
 
